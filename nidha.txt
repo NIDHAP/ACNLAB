@@ -1,0 +1,66 @@
+[mca@localhost Desktop]$ head hi.txt
+head: cannot open `hi.txt' for reading: Permission denied
+[mca@localhost Desktop]$ chmod a+x hi.txt
+[mca@localhost Desktop]$ head hi.txt
+head: cannot open `hi.txt' for reading: Permission denied
+[mca@localhost Desktop]$ chmod a+r hi.txt
+[mca@localhost Desktop]$ head hi.txt
+Welcome to CentOS
+The Community ENTerprise Operating System
+
+CentOS is an Enterprise-class Linux Distribution derived from sources freely provided to the public by Red Hat, Inc. for Red Hat Enterprise Linux. CentOS conforms fully with the upstream vendors redistribution policy and aims to be functionally compatible. (CentOS mainly changes packages to remove upstream vendor branding and artwork.)
+
+CentOS is developed by a small but growing team of core developers.  In turn the core developers are supported by an active user community including system administrators, network administrators, enterprise users, managers, core Linux contributors and Linux enthusiasts from around the world.
+
+CentOS has numerous advantages including: an active and growing user community, quickly rebuilt, tested, and QA'ed errata packages, an extensive mirror network, developers who are contactable and responsive, Special Interest Groups (SIGs) to add functionality to the core CentOS distribution, and multiple community support avenues including a wiki, IRC Chat, Email Lists, Forums, Bugs Database, and an FAQ
+[mca@localhost Desktop]$ more hi.txt
+Welcome to CentOS
+The Community ENTerprise Operating System
+
+CentOS is an Enterprise-class Linux Distribution derived from sources freely provided to the public by Red Hat, Inc. for Red Hat Enterprise Linux. CentOS conforms fully
+ with the upstream vendors redistribution policy and aims to be functionally compatible. (CentOS mainly changes packages to remove upstream vendor branding and artwork.
+)
+
+CentOS is developed by a small but growing team of core developers.  In turn the core developers are supported by an active user community including system administrato
+rs, network administrators, enterprise users, managers, core Linux contributors and Linux enthusiasts from around the world.
+
+CentOS has numerous advantages including: an active and growing user community, quickly rebuilt, tested, and QA'ed errata packages, an extensive mirror network, develop
+ers who are contactable and responsive, Special Interest Groups (SIGs) to add functionality to the core CentOS distribution, and multiple community support avenues incl
+uding a wiki, IRC Chat, Email Lists, Forums, Bugs Database, and an FAQ
+[mca@localhost Desktop]$ grep -c "an" hi.txt
+3
+[mca@localhost Desktop]$ su
+Password: 
+[root@localhost Desktop]# adduser ashiq
+adduser: user 'ashiq' already exists
+[root@localhost Desktop]# adduser ashiq1
+[root@localhost Desktop]# exit
+exit
+[mca@localhost Desktop]$ ls
+42-SAFEELA NASRIN CK         ashiq.pdf                                hi.txt   mes                pgm1.sh      program4.sh  program8.sh       SAFNA SHAMLI.png
+583392041LINUX Commands.pdf  college                                  hi.txt~  mushahida          program1.sh  program5.sh  pu.py             SHAMEEM MCA
+akhil                        dq.py                                    ijas     net_work_lab2.png  program2.sh  program6.sh  SAFNA SHAMLI 44   SOURAV.png
+akhil.hi                     google-chrome-stable_current_x86_64.rpm  mca      net_work_lsb.png   program3.sh  program7.sh  Safna Shamli.png  test.sh
+[mca@localhost Desktop]$ echo hello world
+hello world
+[mca@localhost Desktop]$ mkdir as
+[mca@localhost Desktop]$ pwd
+/home/mca/Desktop
+[mca@localhost Desktop]$ cd college
+[mca@localhost college]$ mv ashiq.pdf ali.pdf
+mv: cannot stat `ashiq.pdf': No such file or directory
+[mca@localhost college]$ cd ../
+[mca@localhost Desktop]$ mv ashiq.pdf ali.pdf
+[mca@localhost Desktop]$ su
+Password: 
+[root@localhost Desktop]# useradd hello
+[root@localhost Desktop]# passwd hello 1234
+passwd: Only one user name may be specified.
+[root@localhost Desktop]# passwd hello
+Changing password for user hello.
+New password: 
+BAD PASSWORD: it is WAY too short
+BAD PASSWORD: is too simple
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@localhost Desktop]#
